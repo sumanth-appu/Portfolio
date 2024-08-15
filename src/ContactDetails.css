@@ -1,0 +1,45 @@
+/* ContactDetails.css */
+.contact-details {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-details h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.email-section .email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #464646;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.email-section .email-button:hover {
+    background-color: #373738;
+}
+
+.social-media-section {
+    margin-top: 30px;
+}
+
+.social-media-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1d0e0e;
+}

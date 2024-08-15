@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.home-details {
+  text-align: center;
+  animation: fadeIn 2ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font-size: 3em;
+  font-family: 'Bebas Neue';
+  animation: fadeIn 1s ease-in-out;
+  height: 1.5em; /* Add this line */
+  display: flex;
+  align-items: center; /* Center the text vertically */
+  margin: 0;
+}
+.logo {
+  width: 100px;  /*Adjust the size as needed*/ 
+  height: auto;
+  margin-bottom: 20px; /* Space between logo and name */
+  animation: fadeIn 1s ease-in-out;
+  border-radius: 50%;
+  border: .1rem solid black;
+  box-shadow: 0.5rem .1rem 2rem #5a5a5a;
+}
+
+.subheading {
+  font-size: 1.5em;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out;
+  height: 1.5em; /* Add this line */
+  display: flex;
+  align-items: center; /* Center the text vertically */
+}
+
+.typed-name, .typed-role {
+  font-family: 'Bebas Neue', Courier, monospace;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #000;
+}
+
+.cursor {
+  font-family: 'Courier New', Courier, monospace;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}

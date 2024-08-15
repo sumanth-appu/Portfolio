@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.bebas-neue-regular {
+    font-family: "Courie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #6e64642b; /* Light background for readability */
+    color: #333; /* Dark text color for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .profile-pic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  /* .profile-pic::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(10px);
+  } */
+  
+  .profile-pic img {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover; /* Ensures the image covers the entire circular area */
+  }
+  
+  .info {
+    flex: 3;
+    margin-left: 20px;
+  }
+  
+  
+  
+  .info p {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue";
+    font-weight: 300;
+    text-align: justify;
+  }
+  
+.education {
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  .education h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .education ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
