@@ -35,6 +35,11 @@ const App = () => {
         }
     };
 
+    if (window.innerWidth <= 1024) {
+        return <div className="mobile-message">Please view on a larger screen.</div>;
+    }
+    
+
     return (
         <div className="container">
             <MenuBar id="home" label="" isActive={activeBar === 'home'} onClick={handleClick} detailsComponent={HomeDetails} />

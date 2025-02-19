@@ -108,3 +108,20 @@ body {
 .projects.expanded { background: #93b185; }
 .edu-skills.expanded { background: #a27596; }
 .connect.expanded { background: #c2b47f; }
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+      display: none;
+  }
+  .mobile-message {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 50px;
+  }
+}
+
+.mobile-message {
+  display: none;
+}
