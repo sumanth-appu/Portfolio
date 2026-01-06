@@ -5,14 +5,13 @@ const skills = [
     {
         items: [
             { name: "Python", logo: "logos/python.png" },
-            { name: "C/C++", logo: "logos/C++.png" },
             { name: "JavaScript", logo: "logos/Js.png" },
             { name: "HTML5", logo: "logos/html5.png" },
             { name: "CSS3", logo: "logos/CSS3.png" },
             { name: "SASS/SCSS", logo: "logos/SASS.png" },
             { name: "SQL", logo: "logos/MySql.png" },
-            { name: "ReactJS", logo: "logos/React.png" },,
-      { name: "AngularJS", logo: "logos/angular.png" }
+            { name: "ReactJS", logo: "logos/React.png" },
+            { name: "AngularJS", logo: "logos/angular.png" },
             { name: "Blockchain", logo: "logos/blockchain.png" },
             { name: "Google Colab", logo: "logos/colab.png" },
             { name: "Bootstrap", logo: "logos/Bootstrap.png" },
