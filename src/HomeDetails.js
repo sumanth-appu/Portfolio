@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './HomeDetails.css';
 import logo from './Resources/logo.png'; 
 
-const roles = ["Welcome To my Portfolio", "Fresher" ,"Web-Developer", "web-Designer","Logo-Designer"];
-const name = "Sumanth Akshali";
+const roles = ["Welcome to my Portfolio", "Web Developer", "Full-Stack Developer", "React | Angular Enthusiast", "Open to Learning New Tech"];const name = "Sumanth Akshali";
 
 const HomeDetails = () => {
     const [currentRole, setCurrentRole] = useState("");
