@@ -11,7 +11,8 @@ const skills = [
             { name: "CSS3", logo: "logos/CSS3.png" },
             { name: "SASS/SCSS", logo: "logos/SASS.png" },
             { name: "SQL", logo: "logos/MySql.png" },
-            { name: "ReactJS", logo: "logos/React.png" },
+            { name: "ReactJS", logo: "logos/React.png" },,
+      { name: "AngularJS", logo: "logos/angular.png" }
             { name: "Blockchain", logo: "logos/blockchain.png" },
             { name: "Google Colab", logo: "logos/colab.png" },
             { name: "Bootstrap", logo: "logos/Bootstrap.png" },
