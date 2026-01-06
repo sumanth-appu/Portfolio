@@ -11,7 +11,7 @@ const AboutPage = () => {
       <div className="info bebas-neue-regular">
         <h1 >Sumanth Akshali</h1>
         <p>
-          I am passionate about the trending technologies. Excited about learning blockchain and eager to contribute to real-world projects while enhancing my expertise. Committed to continuous learning and growth in a dynamic tech environment.
+          I'm a dedicated Full-Stack Web Developer with 1.5 years of professional experience in building scalable web applications. Proficient in AngularJS, JavaScript, PHP, React, and MySQL. Currently exploring Python and modern frameworks. Passionate about clean code, problem-solving, and delivering high-quality solutions. Open to learning new technologies and eager to grow in challenging roles.
         </p>
         <div className="education">
           <h2>Education</h2>
