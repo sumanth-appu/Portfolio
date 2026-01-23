@@ -2,7 +2,14 @@ import React, { useState, useEffect } from 'react';
 import './HomeDetails.css';
 import logo from './Resources/logo.png'; 
 
-const roles = ["Welcome To my Portfolio", "Fresher" ,"Web-Developer", "web-Designer","Logo-Designer"];
+const roles = [
+  "Welcome to my Portfolio",
+  "Software Developer",
+  "Web Application Developer",
+  "Problem Solver",
+  "Logo Designer"
+];
+
 const name = "Sumanth Akshali";
 
 const HomeDetails = () => {

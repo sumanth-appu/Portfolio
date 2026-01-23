@@ -26,9 +26,6 @@ const ContactDetails = () => {
                     <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faTwitter} />
                     </a>
-                    <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </a>
                 </div>
             </div>
         </div>

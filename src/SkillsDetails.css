@@ -55,3 +55,47 @@
         opacity: 1;
     }
 }
+
+.exploration-section {
+  margin-top: 2rem;
+}
+
+.exploration-items {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.exploration-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.exploration-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.theory-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 20px 0 30px;
+  font-size: 0.95rem;
+  color: #121212;
+  max-width: 800px;
+}
+
+.theory-icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 3px;
+  object-fit: contain;
+}
