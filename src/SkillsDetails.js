@@ -99,6 +99,7 @@ const SkillsDetails = () => {
       )}
 
       <h1>Certifications</h1>
+      <p className="certifications-intro">Completed certifications from IIT Kharagpur, Google, IBM, Infosys, Udemy, and Coursera.</p>
       <div className="certifications">
         {certifications.map((cert, index) => (
           <p key={index}>{cert}</p>

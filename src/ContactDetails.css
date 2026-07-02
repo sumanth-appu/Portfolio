@@ -6,7 +6,16 @@
 
 .contact-details h1 {
     font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.connect-tagline {
+    font-size: 1rem;
+    color: #333;
     margin-bottom: 20px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
 }
 
 .email-section .email-button {
@@ -42,4 +51,17 @@
 
 .social-icons a:hover {
     color: #1d0e0e;
+}
+
+/* ── Mobile / Tablet responsive overrides ── */
+@media (max-width: 1023px) {
+  .contact-details         { width: 100%; padding: 0; }
+  .contact-details h1      { font-size: 1.5rem; letter-spacing: 0.08em; margin-bottom: 8px; }
+  .social-media-section h2 { font-size: 1.2rem; }
+  .email-section .email-button { font-size: 1.0rem; padding: 10px 24px; font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.05em; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-details h1      { font-size: 1.8rem; }
+  .social-media-section h2 { font-size: 1.4rem; }
 }

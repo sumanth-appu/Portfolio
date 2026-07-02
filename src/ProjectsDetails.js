@@ -25,28 +25,28 @@ const personalProjects = [
     title: "Education Result & Record Management System (Blockchain)",
     type: "Final Year Project (Research & Design)",
     description:
-        "Proposed and documented a blockchain-based system for secure storage, verification, and management of academic records. The work focused on system design, data flow, and security considerations to prevent tampering and enable transparent verification by institutions and employers. The project documentation and concept were officially registered under IPR (Copyright), with myself listed as a co-author.",
+        "IPR-registered final year research project. Proposed and documented a blockchain-based system for secure, tamper-evident storage and verification of academic credentials. Designed data flows, smart contract structure, and access control logic to enable transparent verification by institutions and employers.",
     technologies: "Blockchain (Conceptual) | Solidity | Ethereum | web3.js(JavaScript) | HTML | CSS",
     github: null, // Research / IPR-registered work
     },
   {
     title: "GENEBAGS – Online Bag Shopping System",
     description:
-      "Developed a full-stack e-commerce web application with product listing, cart functionality, and database integration. Focused on structured data handling and clean UI flow.",
+      "Full-stack e-commerce application with user authentication, product catalog, cart functionality, and database persistence. Built end-to-end: schema design, Flask backend, and a SASS-styled frontend.",
     technologies: "MySQL | HTML | CSS | SASS | Python (Flask)",
     github: "https://github.com/sumanth-appu/GeneBag-DBMS_Project",
   },
   {
     title: "Movie Finder Website",
     description:
-      "Built a movie discovery website that allows users to search and explore films using dynamic data rendering and client-side logic.",
+      "A movie discovery tool built in vanilla JavaScript — no framework, no library. Fetches data from an external API, renders results dynamically, and manages state entirely in plain JS.",
     technologies: "JavaScript | HTML | CSS",
     github: "https://github.com/sumanth-appu/Movie-Finder",
   },
   {
     title: "WebSocket Chat Application",
     description:
-      "Implemented a real-time chat application using WebSockets, enabling instant message exchange with basic connection management.",
+      "Real-time chat application using native WebSockets — no third-party chat library. Implemented connection management, message routing, and session handling in Node.js with a plain JS client.",
     technologies: "JavaScript | HTML | CSS | Node.js",
     github:
       "https://github.com/sumanth-appu/codeClause-Intrenship/tree/main/Websocket_chatApp",
@@ -91,20 +91,13 @@ const ProjectsDetails = () => {
             <p>
               <strong>Technologies:</strong> {project.technologies}
             </p>
-            <p>
-             {project.github && (
-                <p>
-                    <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    GitHub →
-                    </a>
-                </p>
+            {project.github && (
+              <p>
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  GitHub →
+                </a>
+              </p>
             )}
-
-            </p>
           </div>
         ))}
 

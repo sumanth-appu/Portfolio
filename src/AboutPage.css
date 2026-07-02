@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-.bebas-neue-regular {
-    font-family: "Courie", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .about-container {
+.about-container {
     display: flex;
     align-items: flex-start;
     padding: 20px;
@@ -85,3 +78,30 @@
     margin-bottom: 10px;
     font-size: 16px;
   }
+
+/* ── Mobile / Tablet responsive overrides ── */
+@media (max-width: 1023px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+  }
+  .profile-pic    { flex: none; width: 100%; margin-bottom: 16px; }
+  .profile-pic img { width: 120px; height: 120px; }
+  .info           { margin-left: 0; width: 100%; }
+  .info p         { font-size: 1.0rem; font-family: 'DM Sans', sans-serif; line-height: 1.5; }
+  .about-container h1 { font-size: 1.5rem; text-align: center; }
+  .education      { text-align: left; }
+  .education p    { font-family: 'DM Sans', sans-serif; font-size: 0.9rem; line-height: 1.6; }
+  .education h2   { font-size: 1.0rem; }
+  .education li   { font-size: 14px; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-container { padding: 20px; }
+  .profile-pic img { width: 160px; height: 160px; }
+  .info p { font-size: 1.2rem; }
+  .about-container h1 { font-size: 1.8rem; }
+  .education h2 { font-size: 1.2rem; }
+  .education li { font-size: 15px; }
+}

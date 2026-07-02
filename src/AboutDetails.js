@@ -14,11 +14,16 @@ const AboutPage = () => {
           <h1>Sumanth Akshali</h1>
 
           <p>
-            I am a software developer with hands-on experience in AngularJS and PHP,
-            working on real-world applications that involve data validation, quality
-            control workflows, and backend-driven business logic. I focus on building
-            reliable features and understanding how systems behave beyond just the UI.
-            <br /><br />
+            I build things and I design them. That combination isn't common, and it
+            shapes everything I make — including the brand identity for this portfolio,
+            which is my own work.
+          </p>
+          <p>
+            I keep building outside of work: a Flask e-commerce platform, a WebSocket
+            chat app, a React Native notes app. My final-year project was an Education
+            Blockchain Record System — IPR-registered, because it was worth protecting.
+            Professionally, I cut my teeth on a Smart Energy Management System, working
+            across AngularJS and PHP.
           </p>
 
           <div className="education">

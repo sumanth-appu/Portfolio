@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 .projects-details {
     text-align: center;
     animation: fadeIn 2s ease-in-out;
-    font-family: 'Roboto';
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +31,25 @@
     margin-bottom: 10px;
     font-size: 0.8rem;
     text-align: justify;
+}
+
+.project-item h3 {
+  font-size: 1.0rem;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.private-note {
+  font-style: italic;
+  color: #666;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.section-title {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 10px 0;
 }
 
 .project-item h2 {
@@ -87,4 +104,19 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* ── Mobile / Tablet responsive overrides ── */
+@media (max-width: 1023px) {
+  .section-title { font-size: 1.2rem; margin-top: 16px; }
+  .project-item  { font-size: 0.75rem; padding: 8px; margin-bottom: 8px; text-align: left; }
+  .project-item h3 { font-size: 0.9rem; }
+  .projects-details { padding: 0; height: auto; }
+  .more-projects-button { display: block; width: 100%; text-align: center; box-sizing: border-box; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-title { font-size: 1.5rem; }
+  .project-item  { font-size: 0.8rem; padding: 10px; margin-bottom: 10px; }
+  .more-projects-button { width: auto; }
 }

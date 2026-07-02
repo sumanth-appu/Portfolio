@@ -3,11 +3,11 @@ import './HomeDetails.css';
 import logo from './Resources/logo.png'; 
 
 const roles = [
-  "Welcome to my Portfolio",
   "Software Developer",
   "Web Application Developer",
+  "AngularJS & PHP Developer",
+  "Logo Designer",
   "Problem Solver",
-  "Logo Designer"
 ];
 
 const name = "Sumanth Akshali";

@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 .home-details {
   text-align: center;
-  animation: fadeIn 2ms ease-in-out;
+  animation: fadeIn 2s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +8,7 @@
 
 .name {
   font-size: 3em;
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', sans-serif;
   animation: fadeIn 1s ease-in-out;
   height: 1.5em; /* Add this line */
   display: flex;
@@ -37,7 +35,7 @@
 }
 
 .typed-name, .typed-role {
-  font-family: 'Bebas Neue', Courier, monospace;
+  font-family: 'Bebas Neue', sans-serif;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -57,4 +55,18 @@
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: black; }
+}
+
+/* ── Mobile / Tablet responsive overrides ── */
+@media (max-width: 1023px) {
+  .logo       { width: 72px; margin-bottom: 12px; }
+  .name       { font-size: 1.8rem; height: auto; min-height: 1.5em; margin-bottom: 8px; }
+  .subheading { font-size: 1.0rem; height: auto; min-height: 1.5em; margin-top: 6px; }
+  .home-details { width: 100%; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logo       { width: 88px; }
+  .name       { font-size: 2.3rem; }
+  .subheading { font-size: 1.2rem; }
 }

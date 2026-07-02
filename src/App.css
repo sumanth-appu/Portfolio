@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap');
 
 body {
   margin: 0;
@@ -110,18 +111,179 @@ body {
 .connect.expanded { background: #c2b47f; }
 
 
-@media screen and (max-width: 1024px) {
-  .container {
-      display: none;
-  }
-  .mobile-message {
-      display: block;
-      text-align: center;
-      font-size: 18px;
-      margin-top: 50px;
-  }
+/* ── Desktop accordion hides on mobile/tablet ── */
+@media (max-width: 1023px) {
+  .container { display: none; }
 }
 
-.mobile-message {
-  display: none;
+/* ── Mobile section-specific content alignment ── */
+.mobile-content.home {
+  align-items: center;
+}
+
+.mobile-content.connect {
+  align-items: center;
+}
+
+.mobile-content.about {
+  align-items: center;
+}
+
+/* ═══════════════ MOBILE / TABLET LAYOUT ═══════════════ */
+
+/* Outer wrapper — shown on mobile/tablet, hidden on desktop */
+.mobile-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .mobile-container { display: none; }
+}
+
+/* ── Content area ── */
+.mobile-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-image: url('./Resources/backgroundImage.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: local;
+  transition: background-color 0.3s ease;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .mobile-content { padding: 24px; }
+}
+
+.mobile-content.home       { background-color: #99817c; }
+.mobile-content.projects   { background-color: #93b185; }
+.mobile-content.edu-skills { background-color: #a27596; }
+.mobile-content.about      { background-color: #7a9daa; }
+.mobile-content.connect    { background-color: #c2b47f; }
+
+/* ── Rail ── */
+.mobile-rail {
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  flex-shrink: 0;
+  height: 100vh;
+  height: 100dvh;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+@supports not (height: 100dvh) {
+  .mobile-rail { height: -webkit-fill-available; }
+}
+
+@media (min-width: 768px) {
+  .mobile-rail { width: 60px; }
+}
+
+/* ── Rail tabs ── */
+.rail-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-height: 56px;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+  border-left: 3px solid transparent;
+  background-color: #2a2720;
+  opacity: 0.55;
+  transition: opacity 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.rail-tab:first-child { border-top: none; }
+
+/* Active tab shows section color */
+.rail-tab.home.active     { background-color: #99817c; }
+.rail-tab.projects.active { background-color: #93b185; }
+.rail-tab.edu-skills.active { background-color: #a27596; }
+.rail-tab.about.active    { background-color: #7a9daa; }
+.rail-tab.connect.active  { background-color: #c2b47f; }
+
+.rail-tab.active {
+  opacity: 1;
+  border-left: 3px solid rgba(255, 255, 255, 0.65);
+}
+
+.rail-tab:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: -2px;
+}
+
+/* ── Tab label ── */
+.rail-tab-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.85rem;
+  color: #fff;
+  white-space: nowrap;
+  user-select: none;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .rail-tab-label { font-size: 1.0rem; }
+}
+
+/* ── Section transition animations ── */
+@keyframes sectionExit {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0; transform: scale(0.88); }
+}
+
+@keyframes sectionEnter {
+  0%   { opacity: 0; transform: scale(0.84); }
+  65%  { opacity: 1; transform: scale(1.03); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.mobile-content.anim-exit {
+  animation: sectionExit 160ms ease-in forwards;
+  pointer-events: none;
+}
+
+.mobile-content.anim-enter {
+  animation: sectionEnter 380ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  pointer-events: none;
+}
+
+/* Smooth fade — used for swipe navigation only */
+@keyframes sectionFadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes sectionFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.mobile-content.anim-exit-smooth {
+  animation: sectionFadeOut 200ms ease-out forwards;
+  pointer-events: none;
+}
+
+.mobile-content.anim-enter-smooth {
+  animation: sectionFadeIn 280ms ease-in forwards;
+  pointer-events: none;
 }
